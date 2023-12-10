@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-12-2023 a las 22:18:32
+-- Tiempo de generación: 10-12-2023 a las 22:15:30
 -- Versión del servidor: 10.4.17-MariaDB
 -- Versión de PHP: 8.0.0
 
@@ -36,27 +36,6 @@ CREATE TABLE `pelicula` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `pelicula`
---
-
-INSERT INTO `pelicula` (`id`, `nombre`, `imagen`) VALUES
-(1, 'Avengers Infinity War', 'poster01'),
-(2, 'Jurassic World', 'poster02'),
-(3, 'Deadpool 2', 'poster03'),
-(4, 'Solo', 'poster04'),
-(5, 'Los Increibles 2', 'poster05'),
-(6, 'Oceans 8', 'poster06'),
-(7, 'Black Panther', 'poster07'),
-(8, 'Tomb Raider', 'poster08'),
-(9, 'Ready Player One', 'poster09'),
-(10, 'Mission Imposible', 'poster10'),
-(11, 'Pacific Rim', 'poster11'),
-(12, 'Venom', 'poster12'),
-(13, 'Isla de perros', 'poster13'),
-(14, 'Ralph', 'poster14'),
-(15, 'Mamma Mia!', 'poster15');
-
---
 -- Índices para tablas volcadas
 --
 
@@ -74,7 +53,7 @@ ALTER TABLE `pelicula`
 -- AUTO_INCREMENT de la tabla `pelicula`
 --
 ALTER TABLE `pelicula`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
