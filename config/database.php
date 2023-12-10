@@ -6,11 +6,11 @@ class Database {
     private $password;
 
     public function __construct() {
-        $this->host = 'localhost';
-        $this->db = 'dbpaginacionnativa';
-        $this->user = 'root';
+        $this->host = "localhost";
+        $this->db = "dbpaginacionnativa";
+        $this->user = "root";
         $this->password = "root";
-        $this->charset = 'utf8mb4';
+        $this->charset = "utf8mb4";
     }
 
     function conectar() {
@@ -20,7 +20,7 @@ class Database {
             $pdo = new PDO($connection, $this->user, $this->password, $options);    
             return $pdo;  
         } catch(PDOException $e){
-            print_r('Error connection: ' . $e->getMessage());
+            print_r("Error connection: " . $e->getMessage());
         }   
     }
 }
